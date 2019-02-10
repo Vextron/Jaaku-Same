@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { ChatService } from './services/chat.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jaaku-same';
+
+  constructor(public chatService: ChatService) {}
 }
